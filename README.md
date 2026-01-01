@@ -45,36 +45,6 @@ This system is ideal for public places, homes, hospitals, offices, and schools t
 
 ---
 
-##  Circuit Diagram
-
-                      +5V
-                       │
-            ┌──────────┴──────────┐
-            │                     │
-     ┌──────────────┐      ┌─────────────┐
-     │ Ultrasonic   │      │   Servo     │
-     │  Sensor      │      │   Motor     │
-     │ (HC-SR04)    │      │             │
-     │              │      │             │
-     │   VCC ───────┘      │ Red  ────────┘
-     │   GND ──────────────┴── GND
-     │   TRIG ──────────────── D9 (Arduino)
-     │   ECHO ──────────────── D10 (Arduino)
-     └──────────────┘
-                                  Yellow/Signal ─── D6 (Arduino)
-
-                    ┌────────────────────────┐
-                    │       Arduino UNO      │
-                    │                        │
-                    │   D9  → TRIG           │
-                    │   D10 → ECHO           │
-                    │   D6  → SERVO SIGNAL   │
-                    │   5V  → VCC            │
-                    │   GND → GND            │
-                    └────────────────────────┘
-
-
-
 ##  Working Principle
 
 1. The ultrasonic sensor continuously measures distance.  
@@ -106,9 +76,9 @@ This system is ideal for public places, homes, hospitals, offices, and schools t
 
 | Parameter | Description |
 |----------|-------------|
-| `distanceLimit` | Detection distance (default 20 cm) |
-| `openAngle` | Lid open angle |
-| `closeAngle` | Lid close angle |
+| distanceLimit | Detection distance (default 20 cm) |
+| openAngle | Lid open angle |
+| closeAngle | Lid close angle |
 
 ---
 
