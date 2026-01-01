@@ -1,0 +1,22 @@
+                ┌──────────────────────────┐
+                │        Power Supply      │
+                │         (5V DC)          │
+                └────────────┬─────────────┘
+                             │
+                             ▼
+                   ┌──────────────────┐
+                   │    Arduino UNO   │
+                   │ (Microcontroller)│
+                   └───────┬─────┬────┘
+                           │     │
+              Trigger & Echo│     │Servo Signal
+                           │     │
+                           ▼     ▼
+            ┌─────────────────┐  ┌────────────────┐
+            │ Ultrasonic      │  │   Servo Motor  │
+            │ Sensor (HC-SR04)│  │ (Lid Control)  │
+            └────────┬────────┘  └────────┬───────┘
+                     │                    │
+                     ▼                    ▼
+               Object Distance        Dustbin Lid
+                   Detection           Open / Close
